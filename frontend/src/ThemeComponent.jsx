@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import ModeNightIcon from "@mui/icons-material/ModeNight";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
 export const ThemeComponent = () => {
   const { theme, changeTheme } = useContext(ThemeContext);
@@ -8,9 +9,9 @@ export const ThemeComponent = () => {
   return (
     <>
       {theme === "dark" ? (
-        <SunIcon className="icon" onClick={changeTheme} />
+        <LightModeIcon className="icon" onClick={changeTheme} />
       ) : (
-        <MoonIcon className="icon" onClick={changeTheme} />
+        <ModeNightIcon className="icon" onClick={changeTheme} />
       )}
     </>
   );

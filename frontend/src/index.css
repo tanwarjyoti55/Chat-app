@@ -13,3 +13,18 @@ body.light {
 .icon{
     cursor: pointer;
   }
+
+.set-border{
+  border-bottom: 1px solid #fff;
+  margin-top:2px;
+  width:100%;
+
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.chat-box{
+  display:flex;
+  flex-direction: column;
+}

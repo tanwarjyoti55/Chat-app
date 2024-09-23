@@ -1,13 +1,14 @@
-import "./App.css";
-import { ChakraProvider } from "@chakra-ui/react";
-// import { useState } from "react";
-import { ThemeComponent } from "./ThemeComponent";
+// import { ThemeComponent } from "./ThemeComponent";
+import ChatArea from "./component/ChatArea";
+import Container from "@mui/material/Container";
+import Login from "./component/Login";
 
 function App() {
   return (
-    <ChakraProvider>
-      <ThemeComponent />
-    </ChakraProvider>
+    // <Container>
+    <ChatArea />
+    /* <Login /> */
+    // </Container>
   );
 }
 
